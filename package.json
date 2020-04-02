@@ -1,0 +1,18 @@
+{
+  "name": "digitaldream-core",
+  "version": "1.0.0",
+  "description": "core digitalDream application ",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon ./src/server.js",
+    "test": "test"
+  },
+  "author": "joannis",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
