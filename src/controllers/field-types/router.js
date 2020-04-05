@@ -1,6 +1,6 @@
 const router = require('express').Router({ mergeParams: true });
 
-const fieldtype = require('./index.js');
+const fieldtype = require('./api.js');
 
 router.get('/', fieldtype.list);
 
