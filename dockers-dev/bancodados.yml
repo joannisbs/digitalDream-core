@@ -10,6 +10,8 @@ services:
       MONGO_INITDB_DATABASE: object_db
       MONGO_INITDB_ROOT_USERNAME: dev
       MONGO_INITDB_ROOT_PASSWORD: teste
+      MONGODB_USER: dev
+      MONGODB_PASS: teste
     
     networks:
       - mongo
