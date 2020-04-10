@@ -10,6 +10,19 @@ const ObjectSchema = new mongoose.Schema({
   }
 })
 
-const ObjectDraftsModel = mongoose.model('ObjectDraft', ObjectSchema);
+const ObjectModel = mongoose.model('Object', ObjectSchema);
 
-module.exports = ObjectDraftsModel;
+
+
+const newObject = (object) => {
+  const newObject = new ObjectModel(object);
+  newObject.save();
+  return newObject;
+}
+
+
+
+
+module.exports = {
+  newObject,
+};
